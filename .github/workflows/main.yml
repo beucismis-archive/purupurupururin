@@ -1,4 +1,4 @@
-name: Static Page Builder
+name: Notification Sender
 
 on:
   schedule:
