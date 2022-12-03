@@ -3,7 +3,7 @@ Gives you advice on going out on the weather (Uses [OpenWeatherMap](https://open
 
 Clone the repository and set the hidden environment variables.
 
-## Environment Variables
+### Environment Variables
 
 Go to path `Repository` > `Settings` > `Secrets` > `Actions` > `New repository secret` to set the repository environments.
 
@@ -14,10 +14,10 @@ Go to path `Repository` > `Settings` > `Secrets` > `Actions` > `New repository s
 | `OWM_APPID` | `str` | Your unique API key (https://home.openweathermap.org/api_keys) |
 | `NTFY_TOPICS` | `list` | Your subscribed topic names list (E.g: `["mytopic"]`) |
 
-# Credits and References
+## Credits and References
 
 Suggestion messages were inspired by [halilkaya/disari-mi-ciksam](https://github.com/halilkaya/disari-mi-ciksam) project.
 
-# License
+## License
 
 This project is licensed under the GPL-3.0 - see the LICENSE file for details.
