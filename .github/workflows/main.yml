@@ -20,5 +20,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run tool
-      run: |
-        python src/main.py
+      env: 
+        OWM_LAT: ${{ secrets.OWM_LAT }}
+        OWM_LON: ${{ secrets.OWM_LON }}
+        OWM_APPID: ${{ secrets.OWM_APPID }}
+        NTFY_TOPICS: ${{ secrets.NTFY_TOPICS }}
+      run: python src/main.py
