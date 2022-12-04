@@ -1,7 +1,5 @@
 # purupurupururin
-Gives you advice on going out on the weather (Uses [OpenWeatherMap](https://openweathermap.org) to get instant weather information). It does this by sending notifications to your phone or desktop using [ntfy](https://ntfy.sh). No need to run it on your local computer or on a server. It can run at scheduled times with the GitHub workflow.
-
-Clone the repository and set the hidden environment variables.
+Gives you advice on going out on the weather (Uses [OpenWeatherMap](https://openweathermap.org) to get current weather data). It does this by sending notifications to your phone or desktop using [ntfy](https://ntfy.sh). No need to run it on your local computer or on a server. It can run at scheduled times with the GitHub workflow. All you have to do is clone the repository and set the secret environment variables.
 
 ### Environment Variables
 
