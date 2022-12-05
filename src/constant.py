@@ -11,8 +11,9 @@ OWM_APPID = environ.get("OWM_APPID")
 # https://docs.ntfy.sh/publish
 
 NTFY_PRIORITY = "5"
-NTFY_TITLE = "Dışarı mı çıksam?".encode("utf-8")
 NTFY_TOPICS = json.loads(environ.get("NTFY_TOPICS"))
+NTFY_TITLE = "Dışarı mı çıksam?".encode("utf-8")
+NTFY_MESSAGE_TEMPLATE = "{}\nSıcaklık: {}°C   Hissedilen: {}°C   Nem: {}%"
 
 # Weather condition codes
 # http://www.openweathermap.org/weather-conditions#Weather-Condition-Codes-2
