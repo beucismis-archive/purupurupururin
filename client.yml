@@ -1,0 +1,5 @@
+subscribe:
+- topic: NTFY_TOPIC
+  command: notify-send "$title" "$message"
+  if:
+    priority: urgent
