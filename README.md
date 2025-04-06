@@ -13,7 +13,7 @@ Gives you advice on going out on the weather. Uses OpenWeather to get current we
 | `OWM_APPID` | `str` | Your unique [API](https://home.openweathermap.org/api_keys) key |
 | `NTFY_TOPICS` | `list` | Your subscribed topic names list |
 
-Go to path `Repository` > `Settings` > `Secrets` > `Actions` > `New repository secret` to set the repository environments.
+Go to path `Repository` > `Settings` > `Secrets and variables` > `Actions` > `Secrets` > `Repository secrets` > `New repository secret` to set the repository environments.
 
 ## Credits and References
 
