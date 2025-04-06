@@ -2,27 +2,27 @@ name: Notification Sender
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   schedule:
-  - cron: "0 4,9,15 * * *"
+    - cron: "0 4,9,15 * * *"
 
 jobs:
   run-job:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.10"
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run tool
-      env: 
-        OWM_LAT: ${{ secrets.OWM_LAT }}
-        OWM_LON: ${{ secrets.OWM_LON }}
-        OWM_APPID: ${{ secrets.OWM_APPID }}
-        NTFY_TOPICS: ${{ secrets.NTFY_TOPICS }}
-      run: python src/main.py
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run tool
+        env:
+          LATITUDE: ${{ secrets.LATITUDE }}
+          LONGITUDE: ${{ secrets.LONGITUDE }}
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python src/main.py
